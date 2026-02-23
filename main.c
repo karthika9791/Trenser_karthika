@@ -1,26 +1,30 @@
+//*********************** PROJECT String Manipulation ************************** 
+//  Copyright (c) 2026 Trenser Technology Solutions 
+//  All Rights Reserved 
+//****************************************************************************** 
+// 
+// File    : main.c
+// Summary : Entry point to the user function 
+// Note    : Nil
+// Author  : Karthika V T
+// Date    : 20-02-2026
+// 
+//******************************************************************************
+
+//******************************* Include Files ********************************
 #include "main.h"
+
+//****************************** FUNCTION_HEADER ******************************* 
+//Purpose : It calls the function that implements the string manipulation logic
+//Inputs  : Nil
+//Outputs : Nil
+//Return  : returns 0 
+//Notes   : Nil
+//****************************************************************************** 
 int main()
 {
-	char input[100];
-	int option;
-	printf("Enter string\n");
-	scanf("%99[^\n]",input);
-	printf("1. Uppercase-Lowercase\n2. Lowercase-Uppercase\n3. Concatenate\n");
-	scanf("%d ",&option);
-	switch(option)
-	{
-		case 1:
-			upperLower(input);
-			break;
-		case 2:
-			lowerUpper(input);
-			break;
-		case 3:
-			conCatenate(input);
-			break;
-		default:
-			printf("Invalid input\n");
-			break;
-	}
-	puts(input);
+	strMnpCaller();
+
+	return 0;
 }
+// EOF
