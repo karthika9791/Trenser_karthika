@@ -1,29 +1,42 @@
-//*********************** PROJECT String Manipulation ************************** 
+//*************************** String Manipulation ******************************
 //  Copyright (c) 2026 Trenser Technology Solutions 
 //  All Rights Reserved 
 //****************************************************************************** 
 // 
 // File    : main.c
 // Summary : Entry point to the user function 
-// Note    : Nil
+// Note    : None
 // Author  : Karthika V T
 // Date    : 20-02-2026
 // 
 //******************************************************************************
 
 //******************************* Include Files ********************************
-#include "main.h"
+#include "stringManipulation.h"
+
+//******************************* Local Types ********************************* 
+ 
+//***************************** Local Constants ******************************* 
+ 
+//***************************** Local Variables ******************************* 
+ 
+//****************************** Local Functions ******************************
 
 //****************************** FUNCTION_HEADER ******************************* 
 //Purpose : It calls the function that implements the string manipulation logic
-//Inputs  : Nil
-//Outputs : Nil
+//Inputs  : None
+//Outputs : Calls user intertface function for performing string manipulation
 //Return  : returns 0 
-//Notes   : Nil
+//Notes   : None
 //****************************************************************************** 
 int main()
 {
-	strMnpCaller();
+	
+	if(!strManipUserInterface())
+	{
+		printf("Program failed\n");
+		return 0;
+	}
 
 	return 0;
 }

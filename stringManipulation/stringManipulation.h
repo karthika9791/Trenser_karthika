@@ -1,4 +1,4 @@
-//********************* PROJECT String Manipulation ****************************
+//*************************** String Manipulation ******************************
 //  Copyright (c) 2026 Trenser Technology Solutions 
 //  All Rights Reserved 
 //****************************************************************************** 
@@ -9,15 +9,14 @@
 //           string concatenation.
 //
 //****************************************************************************** 
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef STRING_MANIPULATION_H
+#define STRING_MANIPULATION_H
 
 //******************************* Include Files ********************************
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
 #include <stdint.h>
-
 
 //******************************* Global Types ******************************** 
  
@@ -26,7 +25,7 @@
 //***************************** Global Variables ****************************** 
  
 //**************************** Function Declarations ***************************
-bool strMnpCaller();
+bool strManipUserInterface(void);
 
-#endif // _FILE_NAME_H_ 
+#endif // STRING_MANIPULATION_H_ 
 // EOF
